@@ -35,7 +35,10 @@ public class FSMWatchTest {
     public void testSetHrsState(WatchEvents eventToDo, WatchStates expectedState, String expectedDisplay,
                                 int currentHour, int currentMinute, int expectedHour, int expectedMinute) {
         FSMWatch fw = new FSMWatch(WatchStates.setHrs, "Showing Set Hrs", currentHour, currentMinute);
-        fw.processEvent(eventToDo); assertEquals(expectedState, fw.getCurrentWatchState()); assertEquals(expectedDisplay, fw.getWatchDisplay()); assertEquals(expectedHour, fw.getCurrentHrs()); assertEquals(expectedMinute, fw.getCurrentMins());
+        fw.processEvent(eventToDo); assertEquals(expectedState, fw.getCurrentWatchState());
+        assertEquals(expectedDisplay, fw.getWatchDisplay());
+        assertEquals(expectedHour, fw.getCurrentHrs());
+        assertEquals(expectedMinute, fw.getCurrentMins());
     }
 
     @Test
@@ -44,6 +47,10 @@ public class FSMWatchTest {
     public void testSetMinsState(WatchEvents eventToDo, WatchStates expectedState, String expectedDisplay,
                                  int currentHour, int currentMinute, int expectedHour, int expectedMinute) {
         FSMWatch fw = new FSMWatch(WatchStates.setMins, "Showing Set Mins", currentHour, currentMinute);
-        fw.processEvent(eventToDo); assertEquals(expectedState, fw.getCurrentWatchState()); assertEquals(expectedDisplay, fw.getWatchDisplay()); assertEquals(expectedHour, fw.getCurrentHrs()); assertEquals(expectedMinute, fw.getCurrentMins());
+        fw.processEvent(eventToDo);
+        assertEquals(expectedState, fw.getCurrentWatchState());
+        assertEquals(expectedDisplay, fw.getWatchDisplay());
+        assertEquals(expectedHour, fw.getCurrentHrs());
+        assertEquals(expectedMinute, fw.getCurrentMins());
     }
 }
