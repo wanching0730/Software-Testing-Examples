@@ -11,26 +11,50 @@ import static junit.framework.TestCase.assertEquals;
 @RunWith(JUnitParamsRunner.class)
 public class FSMBankAccountTest {
 
-    FSMBankAccount account = new FSMBankAccount(-500, 0, AccountStates.empty);
-
     @Test
-    @Parameters({"addMoney,200,present", "withdrawMoney,100,present"})
-    public void testPresentState(AccountEvents eventToDo, int amount, AccountStates expectedState) {
+    @Parameters({"addMoney,200,200,present", "withdrawMoney,200,100,present"})
+    public void testPresentState(AccountEvents eventToDo, int currentBalance, int amount, AccountStates expectedState) {
+        FSMBankAccount account = new FSMBankAccount(-500, currentBalance, AccountStates.present);
         account.processEvent(eventToDo, amount);
         assertEquals(expectedState, account.getCurrentState());
     }
 
     @Test
-    @Parameters({"addMoney,200,overdraft", "withdrawMoney,100,overdraft"})
-    public void testOverdraftState(AccountEvents eventToDo, int amount, AccountStates expectedState) {
+    @Parameters({"addMoney,-500,100,overdrawn", "addMoney,-500,600,present", "withdrawMoney,-500,100,overdraft"})
+    public void testOverdraftState(AccountEvents eventToDo, int currentBalance, int amount, AccountStates expectedState) {
+        FSMBankAccount account = new FSMBankAccount(-500, currentBalance, AccountStates.overdraft);
         account.processEvent(eventToDo, amount);
         assertEquals(expectedState, account.getCurrentState());
     }
 
     @Test
-    @Parameters({"addMoney,200,})
-    public void testOverdrawnState(AccountEvents eventToDo, int amount, AccountStates expectedState) {
+    @Parameters({"addMoney,-100,300,present", "addMoney,-200,200,empty", "addMoney,-200,100,overdrawn",
+            "withdrawMoney,-300,200,overdraft", "withdrawMoney,-100,100,overdrawn"})
+    public void testOverdrawnState(AccountEvents eventToDo, int currentBalance, int amount, AccountStates expectedState) {
+        FSMBankAccount account = new FSMBankAccount(-500, currentBalance, AccountStates.overdrawn);
         account.processEvent(eventToDo, amount);
         assertEquals(expectedState, account.getCurrentState());
+    }
+
+    @Test
+    @Parameters({"addMoney,0,200,present", "withdrawMoney,0,200,overdrawn"})
+    public void testEmptyState(AccountEvents eventToDo, int currentBalance, int amount, AccountStates expectedState) {
+        FSMBankAccount account = new FSMBankAccount(-500, currentBalance, AccountStates.empty);
+        account.processEvent(eventToDo, amount);
+        assertEquals(expectedState, account.getCurrentState());
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    @Parameters({"withdrawMoney,0,-500"})
+    public void testEmptyStateIllegalArgument(AccountEvents eventToDo, int currentBalance, int amount) {
+        FSMBankAccount account = new FSMBankAccount(-500,currentBalance,AccountStates.empty);
+        account.processEvent(eventToDo,amount);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    @Parameters({"withdrawMoney,-500,500"})
+    public void testOverdraftStateIllegalArgument(AccountEvents eventToDo, int currentBalance, int amount) {
+        FSMBankAccount account = new FSMBankAccount(-500,currentBalance,AccountStates.overdraft);
+        account.processEvent(eventToDo,amount);
     }
 }
