@@ -65,12 +65,14 @@ public class CheckStudentTest {
 
     public Object[] getInvalidParamsForTest() {
 
-        Student[] studArray1 = {new Student("Peter", -10)};
+        Student[] studArray1 = {new Student("Peter", -10), new Student("John", -50)};
         Student[] studArray2 = {new Student("Peter", 30), new Student("John", 50)};
+        Student[] studArray3 = null;
 
         return new Object[] {
-                new Object[] {20, 1, studArray1},
-                new Object[] {-20, 1, studArray2}
+                new Object[] {20, 2, studArray1},
+                new Object[] {-20, 2, studArray2},
+                new Object[] {20, 2, studArray3}
         };
     }
 }

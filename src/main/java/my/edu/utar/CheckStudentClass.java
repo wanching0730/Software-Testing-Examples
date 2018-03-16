@@ -56,30 +56,27 @@ public class CheckStudentClass {
 
 		if(minMark < 0)
 			throw new IllegalArgumentException();
+
+		if(studArray == null)
+		    throw new IllegalArgumentException();
 		
 		int currentHighestMark = 0;
 		for (int i = 0; i < numStudents; i++) {
-			if (minMark < studArray[i].getMark()) {
-				if(studArray[i].mark < 0)
-					throw new IllegalArgumentException();
-				else {
+			if(studArray[i].getMark() < 0)
+				throw new IllegalArgumentException();
+			else {
+				if (minMark < studArray[i].getMark()) {
 					if (currentHighestMark < studArray[i].getMark()) {
 						studList = new ArrayList<>();
 						currentHighestMark = studArray[i].getMark();
 						studList.add(studArray[i]);
-					}if (currentHighestMark < studArray[i].getMark()) {
-					studList = new ArrayList<>();
-					currentHighestMark = studArray[i].getMark();
-					studList.add(studArray[i]);
-				}
-				else if (currentHighestMark == studArray[i].getMark()) {
-					studList.add(studArray[i]);
-				}
+					}
 					else if (currentHighestMark == studArray[i].getMark()) {
 						studList.add(studArray[i]);
 					}
 				}
 			}
+
 		}
 		Student[] arrayToReturn = new Student[studList.size()];
 		arrayToReturn = studList.toArray(arrayToReturn);
