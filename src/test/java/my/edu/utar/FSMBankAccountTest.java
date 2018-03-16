@@ -45,16 +45,9 @@ public class FSMBankAccountTest {
     }
 
     @Test(expected = IllegalArgumentException.class)
-    @Parameters({"withdrawMoney,0,-500"})
+    @Parameters({"withdrawMoney,0,500"})
     public void testEmptyStateIllegalArgument(AccountEvents eventToDo, int currentBalance, int amount) {
         FSMBankAccount account = new FSMBankAccount(-500,currentBalance,AccountStates.empty);
-        account.processEvent(eventToDo,amount);
-    }
-
-    @Test(expected = IllegalArgumentException.class)
-    @Parameters({"withdrawMoney,-500,500"})
-    public void testOverdraftStateIllegalArgument(AccountEvents eventToDo, int currentBalance, int amount) {
-        FSMBankAccount account = new FSMBankAccount(-500,currentBalance,AccountStates.overdraft);
         account.processEvent(eventToDo,amount);
     }
 }
