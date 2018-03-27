@@ -85,13 +85,13 @@ public class OtherMethodTest {
         };
     }
 
-    private Object[] getParamsForTestGetSubStringsValid() {
+    public Object[] getParamsForTestGetSubStringsValid() {
 
         return new Object[] {
                 new Object[] {new String[] {"cat dog mouse", "house fish",
                         "rendang satay curry mee laksa"},
                         new int[] {2, 0, 3}, "mouse house mee"},
-                new Object[] {new String[] {"cat dog mouse", "house fish", null,
+                new Object[] {new String[] {"cat dog mouse", "house fish", "",
                         "rendang satay curry mee laksa"},
                         new int[] {2, 0, 2, 3}, "mouse house mee"},
                 new Object[] {new String[] {"cat dog mouse", "house fish", "rendang satay" },

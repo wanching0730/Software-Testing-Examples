@@ -108,7 +108,10 @@ public class OtherMethods {
 	// result returned: "mouse house mee"
 	
 	public String getSubStrings(String[] strArray, int[] strPos) {
-		
+
+		if(strArray == null || strPos == null)
+			throw new IllegalArgumentException();
+
 		String returnStr = "";
 		String[] words;
 		
