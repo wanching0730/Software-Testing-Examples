@@ -7,6 +7,7 @@ public class PartitionExample {
 		
 		if (mark < 0 || mark > 100)
 			throw new IllegalArgumentException("Mark out of range");
+
 		if (mark < 51)
 			return "F";
 		else if (mark < 61)
