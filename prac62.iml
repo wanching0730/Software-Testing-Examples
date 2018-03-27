@@ -30,7 +30,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="junit-4.121" level="project" />
     <orderEntry type="library" name="JUnitParams-1.0.5" level="project" />
+    <orderEntry type="library" name="junit-4.12" level="project" />
   </component>
 </module>
