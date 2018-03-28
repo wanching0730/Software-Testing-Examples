@@ -24,6 +24,7 @@ public class FSMWatchTest {
     @Parameters({"pressSet,Altimeter,Showing Altimeter", "pressMode,Time,Showing Time"})
     public void testAltimeterState(WatchEvents eventToDo, WatchStates expectedState, String expectedDisplay) {
         FSMWatch fw = new FSMWatch(WatchStates.Altimeter, "Showing Altimeter", 0, 0);
+        fw.processEvent(eventToDo);
         assertEquals(expectedState, fw.getCurrentWatchState());
         assertEquals(expectedDisplay, fw.getWatchDisplay());
     }
@@ -35,7 +36,8 @@ public class FSMWatchTest {
     public void testSetHrsState(WatchEvents eventToDo, WatchStates expectedState, String expectedDisplay,
                                 int currentHour, int currentMinute, int expectedHour, int expectedMinute) {
         FSMWatch fw = new FSMWatch(WatchStates.setHrs, "Showing Set Hrs", currentHour, currentMinute);
-        fw.processEvent(eventToDo); assertEquals(expectedState, fw.getCurrentWatchState());
+        fw.processEvent(eventToDo);
+        assertEquals(expectedState, fw.getCurrentWatchState());
         assertEquals(expectedDisplay, fw.getWatchDisplay());
         assertEquals(expectedHour, fw.getCurrentHrs());
         assertEquals(expectedMinute, fw.getCurrentMins());

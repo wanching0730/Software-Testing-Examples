@@ -88,10 +88,12 @@ public class FSMWatch {
                 case Altimeter:
                     break;
                 case setHrs:
-                    if (++currentHrs > 23) currentHrs = 0;
+                    if (++currentHrs > 23)
+                        currentHrs = 0;
                     break;
                 case setMins:
-                    if (++currentMins > 59) currentMins = 0;
+                    if (++currentMins > 59)
+                        currentMins = 0;
                     break;
             }
         }

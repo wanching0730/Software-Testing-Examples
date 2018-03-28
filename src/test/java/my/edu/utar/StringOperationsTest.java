@@ -26,7 +26,7 @@ public class StringOperationsTest {
         so.compareStringArrays(numToCompare, strArray1, strArray2);
     }
 
-    private Object[] getParamsForTest() {
+    public Object[] getParamsForTest() {
         String[] firstArray = {"cat", "elephant", "mouse", "donkey"};
 
         //2 matching elements in returned array
@@ -53,7 +53,7 @@ public class StringOperationsTest {
         };
     }
 
-    private Object[] getIllegalParamsForTest() {
+    public Object[] getIllegalParamsForTest() {
         String[] firstArray = {"cat", "elephant"};
         String[] secondArray = {"cat", "mouse", "dog", "snake"};
 
