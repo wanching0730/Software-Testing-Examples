@@ -1,4 +1,4 @@
-package edu.utar.my;
+package my.edu.utar;
 
 import java.util.ArrayList;
 

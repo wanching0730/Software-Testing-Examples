@@ -1,7 +1,5 @@
 package my.edu.utar;
 
-import java.util.Random;
-
 interface RandomGet {
     public int getPromoItems();
     public void updatePrice(int discount);
@@ -34,7 +32,7 @@ class DummySalesObject implements RandomGet{
 public class NewMyOwnBiz {
     RandomGet rg;
 
-    public NewMyOwnBiz(RandomGet rd){
+    public NewMyOwnBiz(RandomGet rg){
         this.rg = rg;
     }
 
