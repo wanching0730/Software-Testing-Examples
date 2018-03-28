@@ -2,7 +2,6 @@ package my.edu.utar;
 
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
-import junitparams.converters.Param;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -40,6 +39,16 @@ public class FSMBankAccountTest {
     @Parameters({"addMoney,0,200,present", "withdrawMoney,0,200,overdrawn"})
     public void testEmptyState(AccountEvents eventToDo, int currentBalance, int amount, AccountStates expectedState) {
         FSMBankAccount account = new FSMBankAccount(-500, currentBalance, AccountStates.empty);
+        account.processEvent(eventToDo, amount);
+        assertEquals(expectedState, account.getCurrentState());
+    }
+
+    @Test
+    @Parameters({"addMoney,200,200,present", "withdrawMoney,200,100,present",
+            "addMoney,-500,100,overdrawn", "addMoney,-500,600,present", "withdrawMoney,-500,100,overdraft", "addMoney,-100,300,present", "addMoney,-200,200,empty", "addMoney,-200,100,overdrawn",
+            "withdrawMoney,-300,200,overdraft", "withdrawMoney,-100,100,overdrawn", "addMoney,0,200,present", "withdrawMoney,0,200,overdrawn"})
+    public void testAllStates(AccountEvents eventToDo, int currentBalance, int amount, AccountStates expectedState) {
+        FSMBankAccount account = new FSMBankAccount(-500, currentBalance, expectedState);
         account.processEvent(eventToDo, amount);
         assertEquals(expectedState, account.getCurrentState());
     }

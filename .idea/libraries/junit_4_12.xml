@@ -1,7 +1,11 @@
 <component name="libraryTable">
   <library name="junit-4.12">
     <CLASSES>
+<<<<<<< HEAD
       <root url="jar://D:/Box Sync/Y2S3/Software Testing/Practical/Software_Testing_Jar_Files/junit-4.12.jar!/" />
+=======
+      <root url="jar://$USER_HOME$/Box Sync/Y2S3/Software Testing/Practical/Software_Testing_Jar_Files/junit-4.12.jar!/" />
+>>>>>>> 85798357cb3bcf339962d6fd8b512ce9c9f7f4fb
     </CLASSES>
     <JAVADOC />
     <SOURCES />
