@@ -1,4 +1,4 @@
-package edu.utar.my;
+package my.edu.utar;
 
 public class RandomFindLargest {
 	

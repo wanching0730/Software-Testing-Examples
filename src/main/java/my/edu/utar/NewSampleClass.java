@@ -54,6 +54,7 @@ class DummyWriterClass implements WriteFunctionality {
 	ArrayList<Integer> intList = new ArrayList<Integer>();
 	
 	public void writeDataToFile(int dataToWrite) {
+
 		intList.add(dataToWrite);
 	}
 
