@@ -1,4 +1,4 @@
-package edu.utar.my;
+package my.edu.utar;
 
 import java.util.ArrayList;
 
@@ -18,6 +18,7 @@ class DummyWork implements StuffFunctionality {
 	ArrayList<String> strList = new ArrayList<String>();
 
 	public void doOtherStuff(String message) {
+
 		strList.add(message);
 	}
 	
