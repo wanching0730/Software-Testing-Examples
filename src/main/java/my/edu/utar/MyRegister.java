@@ -2,7 +2,7 @@ package my.edu.utar;
 
 import java.time.Year;
 
-class checkoutObject{
+class checkoutObject implements ICheckOutObject{
 	
 	public int pickABook(){		
 		
