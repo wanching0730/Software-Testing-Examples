@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="826d973e-31ea-4f65-949d-2041b53ef0e3" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/my/edu/utar/SomeMethodsClass.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/my/edu/utar/SomeMethodsClassTest.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/JUnitParams_1_0_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/JUnitParams_1_0_5.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterPath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/my/edu/utar/SomeMethodsClassTest.java" afterPath="$PROJECT_DIR$/src/test/java/my/edu/utar/SomeMethodsClassTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +17,8 @@
       <file leaf-file-name="SomeMethodsClassTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/my/edu/utar/SomeMethodsClassTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+            <state relative-caret-position="74">
+              <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -456,14 +452,11 @@
       <workItem from="1522688520529" duration="27000" />
       <workItem from="1522713995567" duration="32000" />
       <workItem from="1523631580325" duration="685000" />
-      <workItem from="1524457357570" duration="825000" />
+      <workItem from="1524457357570" duration="1047000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NewSampleClassTest - 2018.04.01 at 13h 25m 55s.xml">
-      <configuration name="NewSampleClassTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="NewSampleClassTest - 2018.04.01 at 20h 13m 17s.xml">
       <configuration name="NewSampleClassTest" configurationId="JUnit" />
     </history-entry>
@@ -488,12 +481,15 @@
     <history-entry file="SomeMethodsClassTest_testCheckHumanAge - 2018.04.23 at 12h 44m 08s.xml">
       <configuration name="SomeMethodsClassTest.testCheckHumanAge" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SomeMethodsClassTest_testCheckHumanAge - 2018.04.23 at 12h 44m 23s.xml">
+      <configuration name="SomeMethodsClassTest.testCheckHumanAge" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="StringOperationsTest - 2018.03.28 at 10h 00m 41s.xml">
       <configuration name="StringOperationsTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38908000" />
+    <option name="totallyTimeSpent" value="39130000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="742" extended-state="6" />
@@ -897,8 +893,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/my/edu/utar/SomeMethodsClassTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        <state relative-caret-position="74">
+          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

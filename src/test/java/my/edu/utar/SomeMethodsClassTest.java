@@ -25,6 +25,7 @@ public class SomeMethodsClassTest {
 		result = smc.checkHumanAge(-1);
 		assertFalse("Age is not in range, error in checking !", result);
 		result = smc.checkHumanAge(150);
+		assertFalse("Age is not in range, error in checking!", result);
 	}
 
 	@Test
