@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="826d973e-31ea-4f65-949d-2041b53ef0e3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/my/edu/utar/FSMWatchTestSingle.java" afterPath="$PROJECT_DIR$/src/test/java/my/edu/utar/FSMWatchTestSingle.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/my/edu/utar/FSMBankAccountTest.java" afterPath="$PROJECT_DIR$/src/test/java/my/edu/utar/FSMBankAccountTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,24 +14,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FSMWatchTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/my/edu/utar/FSMWatchTest.java">
+      <file leaf-file-name="FSMBankAccountTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/my/edu/utar/FSMBankAccountTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-319">
-              <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+            <state relative-caret-position="1794">
+              <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FSMWatchTestSingle.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/my/edu/utar/FSMWatchTestSingle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="27" column="65" lean-forward="false" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -65,7 +53,6 @@
         <option value="$PROJECT_DIR$/src/test/java/my/edu/utar/FSMWatchTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/my/edu/utar/AnotherExampleTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/my/edu/utar/StringOperationsTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/my/edu/utar/FSMBankAccountTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/my/edu/utar/DiscountClassTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/edu/utar/NewRandomAddNumbers.java" />
         <option value="$PROJECT_DIR$/src/test/java/my/edu/utar/NewRandomAddNumbersTest.java" />
@@ -85,6 +72,7 @@
         <option value="$PROJECT_DIR$/src/main/java/my/edu/utar/SomeMethodsClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/my/edu/utar/SomeMethodsClassTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/my/edu/utar/FSMWatchTestSingle.java" />
+        <option value="$PROJECT_DIR$/src/test/java/my/edu/utar/FSMBankAccountTest.java" />
       </list>
     </option>
   </component>
@@ -469,7 +457,7 @@
       <workItem from="1523631580325" duration="685000" />
       <workItem from="1524457357570" duration="5676000" />
       <workItem from="1524489190621" duration="419000" />
-      <workItem from="1524531630962" duration="539000" />
+      <workItem from="1524531630962" duration="1814000" />
     </task>
     <servers />
   </component>
@@ -506,7 +494,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44717000" />
+    <option name="totallyTimeSpent" value="45992000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="742" extended-state="0" />
@@ -553,13 +541,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/edu/utar/StringOperation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/my/edu/utar/CheckStudentTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2201">
@@ -620,13 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="713">
           <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/my/edu/utar/StringOperationsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -749,13 +723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/my/edu/utar/FSMBankAccountTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-358">
-          <caret line="27" column="15" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/my/edu/utar/NewMyOwnBizTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
@@ -818,16 +785,6 @@
         <state relative-caret-position="-466">
           <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/my/edu/utar/SomeMethodsClassTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1130">
-          <caret line="54" column="63" lean-forward="true" selection-start-line="54" selection-start-column="63" selection-end-line="54" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -921,6 +878,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/my/edu/utar/FSMWatchTestSingle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="25" column="76" lean-forward="true" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/my/edu/utar/FSMWatchTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-319">
@@ -929,13 +896,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/my/edu/utar/FSMWatchTestSingle.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/my/edu/utar/FSMBankAccountTestSingle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="27" column="65" lean-forward="false" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-255">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/my/edu/utar/SomeMethodsClassTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="54" column="63" lean-forward="true" selection-start-line="54" selection-start-column="63" selection-end-line="54" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/my/edu/utar/StringOperationsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/my/edu/utar/FSMBankAccountTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1794">
+          <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

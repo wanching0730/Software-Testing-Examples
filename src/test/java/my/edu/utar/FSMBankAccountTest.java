@@ -25,6 +25,15 @@ public class FSMBankAccountTest {
     }
 
     @Test
+    @Parameters({"addMoney,200,present,200", "withdrawMoney,200,overdrawn,-200"})
+    public void testEmptyState(AccountEvents eventToDo, int amount, AccountStates expectedState, int expectedBalance) {
+        FSMBankAccount account = new FSMBankAccount(-500, 0, AccountStates.empty);
+        account.processEvent(eventToDo, amount);
+        assertEquals(expectedState, account.getCurrentState());
+        assertEquals(expectedBalance, account.getCurrentBalance());
+    }
+
+    @Test
     @Parameters({"addMoney,100,overdrawn,-400", "addMoney,600,present,100", "withdrawMoney,100,overdraft,-500"})
     public void testOverdraftState(AccountEvents eventToDo,int amount, AccountStates expectedState, int expectedBalance) {
         FSMBankAccount account = new FSMBankAccount(-500, -500, AccountStates.overdraft);
@@ -38,15 +47,6 @@ public class FSMBankAccountTest {
             "withdrawMoney,500,overdraft,-500", "withdrawMoney,300,overdraft,-500",  "withdrawMoney,200,overdrawn,-400"})
     public void testOverdrawnState(AccountEvents eventToDo, int amount, AccountStates expectedState, int expectedBalance) {
         FSMBankAccount account = new FSMBankAccount(-500, -200, AccountStates.overdrawn);
-        account.processEvent(eventToDo, amount);
-        assertEquals(expectedState, account.getCurrentState());
-        assertEquals(expectedBalance, account.getCurrentBalance());
-    }
-
-    @Test
-    @Parameters({"addMoney,200,present,200", "withdrawMoney,200,overdrawn,-200"})
-    public void testEmptyState(AccountEvents eventToDo, int amount, AccountStates expectedState, int expectedBalance) {
-        FSMBankAccount account = new FSMBankAccount(-500, 0, AccountStates.empty);
         account.processEvent(eventToDo, amount);
         assertEquals(expectedState, account.getCurrentState());
         assertEquals(expectedBalance, account.getCurrentBalance());
