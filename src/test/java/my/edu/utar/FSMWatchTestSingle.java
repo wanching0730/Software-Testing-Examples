@@ -2,9 +2,6 @@ package my.edu.utar;
 
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
-import my.edu.utar.FSMWatch;
-import my.edu.utar.WatchEvents;
-import my.edu.utar.WatchStates;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="826d973e-31ea-4f65-949d-2041b53ef0e3" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/my/edu/utar/FSMWatchTestSingle.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/my/edu/utar/FSMWatchTestSingle.java" afterPath="$PROJECT_DIR$/src/test/java/my/edu/utar/FSMWatchTestSingle.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +17,7 @@
       <file leaf-file-name="FSMWatchTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/my/edu/utar/FSMWatchTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-353">
+            <state relative-caret-position="-319">
               <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
               <folding />
             </state>
@@ -28,9 +27,11 @@
       <file leaf-file-name="FSMWatchTestSingle.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/my/edu/utar/FSMWatchTestSingle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-29">
-              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="251">
+              <caret line="27" column="65" lean-forward="false" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,6 +84,7 @@
         <option value="$PROJECT_DIR$/src/test/java/my/edu/utar/NewMyRegisterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/edu/utar/SomeMethodsClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/my/edu/utar/SomeMethodsClassTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/my/edu/utar/FSMWatchTestSingle.java" />
       </list>
     </option>
   </component>
@@ -467,7 +469,7 @@
       <workItem from="1523631580325" duration="685000" />
       <workItem from="1524457357570" duration="5676000" />
       <workItem from="1524489190621" duration="419000" />
-      <workItem from="1524531630962" duration="315000" />
+      <workItem from="1524531630962" duration="539000" />
     </task>
     <servers />
   </component>
@@ -504,7 +506,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44493000" />
+    <option name="totallyTimeSpent" value="44717000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="742" extended-state="0" />
@@ -921,7 +923,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/my/edu/utar/FSMWatchTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-353">
+        <state relative-caret-position="-319">
           <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
           <folding />
         </state>
@@ -929,9 +931,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/my/edu/utar/FSMWatchTestSingle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-29">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="251">
+          <caret line="27" column="65" lean-forward="false" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
