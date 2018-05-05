@@ -42,7 +42,7 @@ public class StringOperationsTest {
         String[] expectedResult3 = {};
 
         String[] secondArray4 = {"dog", "cat", "elephant", "donkey"};
-        String[] expectedResult4 = {"cat", "elephant"};
+        String[] expectedResult4 = {"cat"};
 
         return new Object[] {
                 new Object[] {4, firstArray, secondArray1, expectedResult1},

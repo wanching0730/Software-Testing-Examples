@@ -45,7 +45,7 @@ public class CheckStudentTest {
         // only return 1 result, although got 2 highest mark because oni check for first 2 students
         // the marks higher than min marks, return nothing
         Student[] studArray4 = {new Student("Peter", 60), new Student("James", 50), new Student("Johny", 40),
-                new Student("Kelly", 40)};
+                new Student("Kelly", 60)};
         Student [] expectedResult4 = {new Student("Peter", 60)};
 
         // return 0 result, because no student pass for checking
